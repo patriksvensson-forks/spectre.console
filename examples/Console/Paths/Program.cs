@@ -1,5 +1,3 @@
-using System;
-using System.Threading;
 using Spectre.Console;
 
 namespace Paths;
@@ -40,15 +38,15 @@ public static class Program
             new TextPath(windowsPath)
                 .RootColor(Color.Blue)
                 .SeparatorColor(Color.Yellow)
-                .StemStyle(Color.Red)
-                .LeafStyle(Color.Green));
+                .StemColor(Color.Red)
+                .LeafColor(Color.Green));
 
         table.AddRow(new Text("Unix"),
             new TextPath(unixPath)
                 .RootColor(Color.Blue)
                 .SeparatorColor(Color.Yellow)
-                .StemStyle(Color.Red)
-                .LeafStyle(Color.Green));
+                .StemColor(Color.Red)
+                .LeafColor(Color.Green));
 
         AnsiConsole.Write(table);
     }
